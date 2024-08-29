@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Custom Styles for ShadCN Input and Select */
+.todo-input {
+  --input-padding-y: 10px;
+  --input-padding-x: 15px;
+  --input-font-size: 16px;
+  --input-border-radius: 4px;
+}
+
+.todo-select {
+  --select-padding-y: 10px;
+  --select-padding-x: 15px;
+  --select-font-size: 16px;
+  --select-border-radius: 4px;
+}
+
+.todo-button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Todo Name */
+.todo-name {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.todo-name.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Todo Actions */
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #28a745;
+}
+
+.delete-button:hover {
+  background-color: #dc3545;
+}
